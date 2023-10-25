@@ -72,7 +72,7 @@ Install this project with:
 
 ```sh
   cd hello-react-front-end
-  gem install
+  npm install or yarn add
 ```
 
 ### Usage
