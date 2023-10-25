@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { Routes, Route } from "react-router-dom";
-import { getGreeting } from "./redux/greetingSlice";
-import Greeting from "./components/Greeting";
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { Routes, Route } from 'react-router-dom';
+import { getGreeting } from './redux/greetingSlice';
+import Greeting from './components/Greeting';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -12,7 +12,7 @@ const App = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className="app">
       <Routes>
         <Route path="/" element={<Greeting />} />
       </Routes>
